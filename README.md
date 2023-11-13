@@ -24,7 +24,7 @@ Avant de commencer, assurez-vous que vous avez installé les éléments suivants
 
 4. Installez toutes les dépendaces :
 
-   '''bash
+   ```bash
    python -m pip install -r requirements.txt
 
 5. Accédez au répertoire contenant le fichier .py en utilisant la commande `cd` (change directory). Par exemple, si le fichier est dans le dossier "mon_projet", vous pouvez entrer :
