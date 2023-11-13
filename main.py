@@ -10,7 +10,7 @@ class PasswordGeneratorLayout(BoxLayout):
     def generate_password(self):
         platform = self.ids.platform_input.text
         alphabet = string.ascii_letters + string.digits + string.punctuation
-
+        print("Hello, World!")
         try:
             pwd_length = int(self.ids.length_input.text)
             if pwd_length < 8:
