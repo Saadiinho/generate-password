@@ -37,4 +37,4 @@ Avant de commencer, assurez-vous que vous avez installé les éléments suivants
    ```bash
    python main.py
 
-Il ne vous reste plus qu'à profiter de ce quizz !
+Il ne vous reste plus qu'à profiter de ce générateur de mot de passe !
