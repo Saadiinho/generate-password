@@ -1,7 +1,5 @@
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
-from kivy.lang import Builder
-from kivymd.uix.button import MDRaisedButton
 import secrets
 import string
 
@@ -23,6 +21,16 @@ class PasswordGeneratorLayout(BoxLayout):
                     fichier.write(f"{platform}: {password}\n")
         except ValueError:
             self.ids.result_label.text = "Veuillez saisir une longueur valide."
+
+    def show_password(self):
+        nom_fichier = 'save_password.txt'
+        with open(nom_fichier, 'r') as fichier:
+            # Lire le contenu du fichier ligne par ligne
+            lignes = fichier.readlines()
+                
+            # Afficher chaque ligne lue
+            for ligne in lignes:
+                print(ligne.strip()) 
     def stop(self):
         # Cette fonction est appelée lors de l'appui sur le bouton "Quitter l'application"
         App.get_running_app().stop()
